@@ -52,6 +52,7 @@
                     <span></span>
                     <h3>工事中</h3>
                     <p>工事中</p>
+                    <p>工事中</p>
                     <div class="more" @click="modalon(4)">MORE</div>
                 </div>
             </div>
