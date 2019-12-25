@@ -72,7 +72,7 @@ main{
     margin:0 15rem;
     h1{
         height:10rem;
-        line-height: 10rem;
+        // line-height: 10rem;
     }
     .conteiner{
         @media screen and(max-width:1100px){
