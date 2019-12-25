@@ -84,7 +84,8 @@ main{
         bottom:0;
         // background:red;
 
-        height:70rem;
+        // height:70rem;
+        height:85%;
         width:100%;
 
         display:flex;
