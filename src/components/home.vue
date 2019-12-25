@@ -95,6 +95,8 @@ main{
         .box{
             @media screen and (max-width:1100px){
                 margin:3rem 0;
+                margin-top:5rem;
+
             }
             // height:30rem;
             // width:40rem;

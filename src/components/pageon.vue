@@ -4,7 +4,7 @@
     <main v-if="pageon">
         <div class="content">
             <h1>Portfolio Site</h1>
-            <div class="join" v-on:click="change">JOIN</div>
+            <div class="join" v-on:click="change">ENTER</div>
         </div>
     </main>
 </transition>
@@ -43,7 +43,11 @@ main{
             padding:1.5rem 5rem;
             margin-top:5rem;
             cursor: pointer;
-        }
+            transition: .5s;
+            &:hover{
+                background:#243a63;
+                color:#fff;
+        }}
     }
 }
 .pageon-leave-active{
