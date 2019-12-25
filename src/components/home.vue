@@ -73,8 +73,8 @@ main{
     position: relative;
     margin:0 15rem;
     h1{
-        height:10rem;
-        line-height:10rem;
+        height:7rem;
+        line-height:7rem;
     }
     .conteiner{
         @media screen and(max-width:1100px){
@@ -85,7 +85,7 @@ main{
         // background:red;
 
         // height:70rem;
-        height:85%;
+        height:90%;
         width:100%;
 
         display:flex;
