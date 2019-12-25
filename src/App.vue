@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <pageon v-on:change="start" />
+      <transition>
+      <home v-if="fadein"/>
+      </transition>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import pageon from './components/pageon.vue'
+import home from './components/home.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    pageon,
+    home
+  },
+  data () {
+    return {
+      fadein: false
+    }
+  },
+  methods: {
+    start: function () {
+      this.fadein = true
+    }
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    background: #f9fbb1 ;
+.v-enter{
+    opacity: 0;
+}
+.v-enter-active{
+    transition: opacity 2s;
+    transition-delay: 1s;
+}
 }
 </style>
