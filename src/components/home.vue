@@ -44,7 +44,7 @@
                 </div>
             </div>
              <div class="box">
-                <div class="front"></div>
+                <div class="front"><img src="../assets/kouzi.jpg"></div>
                 <div class="back">
                     <span></span>
                     <span></span>
@@ -96,8 +96,8 @@ main{
             @media screen and (max-width:1100px){
                 margin:3rem 0;
             }
-            height:30rem;
-            width:40rem;
+            // height:30rem;
+            // width:40rem;
             &:hover .front{
                 transform: rotateX(180deg);
             }
@@ -119,9 +119,10 @@ main{
                     animation-delay: 1s;
             }
             .front,.back{
-                background:black;
+                // background:black;
                 height:30rem;
                 width: 40rem;
+                // padding:2rem 0;
                 position: absolute;
                 transition:1s;
                 backface-visibility: hidden;
