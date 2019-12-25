@@ -62,12 +62,18 @@
 <style lang="scss" scoped>
 
 main{
-    min-height:100vh;
+    @media screen and (max-width:1100px){
+        height:0;
+    }
+    height:100vh;
     background: #f9fbb1 ;
     color:#0d084e;
     position: relative;
     margin:0 15rem;
     .conteiner{
+        @media screen and(max-width:1100px){
+            height:0;
+        }
         position: absolute;
         bottom:0;
         // background:red;
@@ -80,7 +86,9 @@ main{
         align-items: center;
         flex-wrap: wrap;
         .box{
-
+            @media screen and (max-width:1100px){
+                margin:3rem 0;
+            }
             height:30rem;
             width:40rem;
             &:hover .front{

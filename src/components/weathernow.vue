@@ -21,6 +21,9 @@
     .left{
         margin:-5rem auto 0 auto;
         img{
+            @media screen and(max-width:1100px){
+                height:20rem;
+            }
             height:40rem;
         }
     }

@@ -29,6 +29,9 @@
         position: relative;
         border-radius:3rem;
         .close{
+            @media screen  and(max-width: 1100px){
+                right:30%;
+            }
             position: absolute;
             bottom:2rem;
             right:2rem;
